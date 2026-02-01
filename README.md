@@ -6,23 +6,23 @@ github에서 idea 찾기 프로젝트.
 3. 새로 생성된 아이디어에 biz, tech 점수를 부여하고, 프로젝트에 대한 설명을 작성한다.(Meta-Llama-3.1-8B 이용) 
 4. SQLite를 이용해서 저장한다.
 
-# GitHub에서 레포 수집
-python main.py collect              
+### GitHub에서 레포 수집
+"""python main.py collect              
 python main.py collect -p 10       
 
-# 아이디어 생성 + 평가
+### 아이디어 생성 + 평가
 python main.py run
 python main.py run -n 5             # 5개만 생성
 
-# 결과 조회
+### 결과 조회
 python main.py results
 python main.py results --min-biz 7  # biz_score 7 이상
 python main.py results --min-tech 8 --limit 5
 
-# 불러온 repo 보기 
+### 불러온 repo 보기 
 python main.py repos
 
-# 삭제 명령어
+### 삭제 명령어
 python main.py delete-repos --all   
 python main.py delete-repos --ids 1,3,5
 python main.py delete-repos --name awesome (awesome 이름이 포함된 repo 삭제)
